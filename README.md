@@ -9,18 +9,21 @@ $ npm install awk
 
 ### Example
 ````javascript
-var awk = require('awk');
+var awk = require('awk'),
+    fs = require('fs');
 
-var result = awk('BEGIN {print "Hello from Web/AWK World"} $2 ~ /C/ { print $1 * 2 }','
-    1   A
-    2   B
-    3   C
-    4   D
-');
+var result = awk(fs.readFileSync( __dirname + '/demo.awk'),fs.readFileSync( __dirname + '/data.txt'));
 
 console.log(result.exit_code);
 console.log(result.stdout);
 console.log(result.stderr);
+````
+
+### Demo
+````
+$ git clone https://github.com/turingou/awk.git
+$ cd awk
+$ node demo/demo.js
 ````
 
 ### API

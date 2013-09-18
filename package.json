@@ -1,6 +1,6 @@
 {
   "name": "awk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a wrapper of webAwk, wak in javascript",
   "main": "index.js",
   "scripts": {
