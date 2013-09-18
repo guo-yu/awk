@@ -1,6 +1,6 @@
 ## awk ![npm](https://badge.fury.io/js/awk.png)
 
-a wrapper of a wrapper of [WebAwk](https://github.com/agordon/webawk), awk in javascript
+a wrapper of [WebAwk](https://github.com/agordon/webawk), awk in javascript
 
 ### Installation
 ````
